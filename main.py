@@ -91,10 +91,10 @@ async def gen():
     
     await register_event(token)
     code_data = await create_code(token)
-    print('Сгенерированный код:', code_data)
+    print(code_data)
 
     # إرسال النتائج إلى Telegram
-    await send_to_telegram(f'Сгенерированный код: {code_data}')
+    await send_to_telegram(f'{code_data}')
 
 async def main():
     while True:
